@@ -4,7 +4,13 @@ module.exports = {
     "./packages/renderer/src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: "hsl(var(--primary))"
+      }
+    },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")]
 }
